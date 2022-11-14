@@ -233,7 +233,7 @@
 }
 
 .etapes_card2_img {
-  width: 100px;
+  width: 160px;
 }
 
 .etapes_card2_text {
@@ -477,7 +477,7 @@
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-top: 8%;
-  margin-bottom: 250px;
+  margin-bottom: 100px;
 }
 
 .montant_title {
@@ -490,6 +490,24 @@
 .montant_text {
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.montant_btn {
+  background-color: #8ed3a8;
+  border: 3px solid white;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 15px;
+}
+
+.montant a:hover {
+  background-color: white;
+  color: #8ed3a8;
+  border: 3px solid #8ed3a8;
 }
 
 .montant_container-card {

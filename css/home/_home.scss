@@ -71,6 +71,8 @@
   }
 }
 
+// -------- Présentation ---------
+
 .presentation {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -123,6 +125,8 @@
   }
 }
 
+// --------- Étapes ---------
+
 .etapes {
   padding-left: 6%;
   display: flex;
@@ -160,13 +164,15 @@
     transform: translateY(-70px);
 
     &_img {
-      width: 100px;
+      width: 160px;
     }
     &_text {
       text-align: center;
     }
   }
 }
+
+// ------------- Aides ------------
 
 .aides {
   font-family: "Montserrat", sans-serif;
@@ -244,6 +250,8 @@
   background-size: 130%;
 }
 
+// ----------- Certification --------
+
 .certification {
   margin: 5% 0;
   position: relative;
@@ -277,6 +285,8 @@
   }
 }
 
+// ---------- Fonctionnement ----------
+
 .fonctionnement {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -298,6 +308,8 @@
   }
 }
 
+// --------- Detail -----------
+
 .detail {
   font-family: "Montserrat", sans-serif;
   background-image: url("../../images/Artisan.jpg");
@@ -315,6 +327,8 @@
     transform: translateY(25%);
   }
 }
+
+// ---------- Avantages ----------
 
 .avantages {
   &_container {
@@ -358,12 +372,14 @@
   }
 }
 
+//--------- Montant ------------
+
 .montant {
   background-color: $vert;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-top: 8%;
-  margin-bottom: 250px;
+  margin-bottom: 100px;
   &_title {
     color: white;
     font-size: 36px;
@@ -373,6 +389,21 @@
   &_text {
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 60px;
+  }
+  &_btn {
+    background-color: $vert;
+    border: 3px solid white;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    padding: 15px;
+  }
+  a:hover {
+    background-color: white;
+    color: $vert;
+    border: 3px solid $vert;
   }
 
   &_container-card {
