@@ -76,6 +76,12 @@
   background: transparent;
 }
 
+@media all and (max-width: 1200px) {
+  .navbar {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .responsive-nav-btn {
     display: block;
@@ -173,6 +179,50 @@
   background-color: #8ed3a8;
 }
 
+@media all and (max-width: 1200px) {
+  .presentation_left_title {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .presentation_left_title {
+    height: 90px;
+  }
+  .presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .presentation_left {
+    width: 100%;
+  }
+  .presentation_left_box {
+    padding: 40px 7% 40px;
+  }
+  .presentation_left_box_text {
+    background-color: rgba(142, 211, 168, 0.75);
+    text-align: center;
+    padding: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .presentation_right {
+    width: 100%;
+  }
+  .presentation_right_logo {
+    display: none;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .presentation_left_box_text {
+    font-size: 15px;
+  }
+}
+
 .etapes {
   padding-left: 6%;
   display: -webkit-box;
@@ -238,6 +288,63 @@
 
 .etapes_card2_text {
   text-align: center;
+}
+
+@media all and (max-width: 950px) {
+  .etapes {
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .etapes_card1 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    font-size: 22px;
+    height: 220px;
+  }
+  .etapes_card2 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    font-size: 15px;
+    height: 220px;
+  }
+  .etapes_card2_img {
+    width: 120px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .etapes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .etapes_card1 {
+    width: 50%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    font-size: 22px;
+    height: 5%;
+  }
+  .etapes_card2 {
+    margin: 0;
+    margin-top: 15px;
+    padding: 5px;
+    width: 50%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    font-size: 15px;
+    height: 5%;
+  }
+  .etapes_card2_img {
+    width: 120px;
+  }
 }
 
 .aides {
@@ -313,9 +420,9 @@
 }
 
 .cardmaprime {
-  background: url("../../images/Ma prime renov.png"), white;
+  background: url("../../images/maprime.png"), white;
   background-position: 54% center;
-  background-size: 170%;
+  background-size: cover;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -325,6 +432,104 @@
   background: url("../../images/CEE.png"), #d6dde4;
   background-position: center;
   background-size: 130%;
+}
+
+@media all and (max-width: 1150px) {
+  .aides_container {
+    background-color: #d6dde4;
+    padding-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aides_card {
+    position: relative;
+    margin-left: 0;
+    padding: 30px;
+    width: 550px;
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    z-index: 30;
+  }
+  .aides_card_text {
+    background-color: rgba(142, 211, 168, 0.75);
+    font-size: 25px;
+    line-height: 60px;
+    font-weight: 400;
+    margin: 4px;
+    border-radius: 15px;
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .aides_pac {
+    display: none;
+  }
+  .aides_title {
+    display: none;
+  }
+  .cardcee {
+    margin: 40px auto 0;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .aides_card {
+    width: 350px;
+    height: 350px;
+  }
+  .aides_card_text {
+    background-color: rgba(142, 211, 168, 0.75);
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 400;
+    margin: 4px;
+    border-radius: 15px;
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .aides_card {
+    width: 250px;
+    height: 250px;
+  }
+  .aides_card_text {
+    background-color: rgba(142, 211, 168, 0.75);
+    font-size: 10px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 4px;
+    border-radius: 15px;
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
 }
 
 .certification {
@@ -400,6 +605,24 @@
   font-size: 32px;
 }
 
+@media all and (max-width: 950px) {
+  .fonctionnement_text {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .fonctionnement_text {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .fonctionnement {
+    display: none;
+  }
+}
+
 .detail {
   font-family: "Montserrat", sans-serif;
   background-image: url("../../images/Artisan.jpg");
@@ -419,6 +642,27 @@
   padding: 1%;
   -webkit-transform: translateY(25%);
           transform: translateY(25%);
+}
+
+@media all and (max-width: 950px) {
+  .detail_box {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .detail_box {
+    font-size: 14px;
+    line-height: 22px;
+    width: 450px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .detail_box {
+    display: none;
+  }
 }
 
 .avantages_container {
@@ -470,6 +714,160 @@
           align-items: center;
   font-size: 28px;
   line-height: 45px;
+}
+
+@media all and (max-width: 1050px) {
+  .avantages_container {
+    margin: 0 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+  }
+  .avantages_card1 {
+    width: 23%;
+    text-align: center;
+    padding: 20px;
+  }
+  .avantages_card1_title {
+    color: #8ed3a8;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .avantages_card1_fact {
+    color: #8ed3a8;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+  .avantages_card1_text {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .avantages_card2 {
+    width: 23%;
+    background-color: #8ed3a8;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 22px;
+    line-height: 45px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .avantages_container {
+    margin: 0 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+  }
+  .avantages_card1 {
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+  }
+  .avantages_card1_title {
+    color: #8ed3a8;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .avantages_card1_fact {
+    color: #8ed3a8;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+  .avantages_card1_text {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .avantages_card2 {
+    width: 45%;
+    background-color: #8ed3a8;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 22px;
+    line-height: 45px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .avantages_container {
+    margin: 0 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+  }
+  .avantages_card1 {
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+  }
+  .avantages_card1_title {
+    color: #8ed3a8;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .avantages_card1_fact {
+    color: #8ed3a8;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 15px 0;
+  }
+  .avantages_card1_text {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .avantages_card2 {
+    width: 70%;
+    background-color: #8ed3a8;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 22px;
+    line-height: 45px;
+  }
 }
 
 .montant {
@@ -598,8 +996,9 @@ footer a {
 .swiper-slide img {
   display: block;
   height: 10rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 16rem;
 }
 
 .swiper-button-prev,

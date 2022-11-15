@@ -47,6 +47,12 @@
   background: transparent;
 }
 
+@media all and (max-width: 1200px) {
+  .navbar {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .responsive-nav-btn {
     display: block;
@@ -125,6 +131,49 @@
   }
 }
 
+@media all and (max-width: 1200px) {
+  .presentation_left_title {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .presentation_left_title {
+    height: 90px;
+  }
+  .presentation {
+    flex-direction: column;
+    &_left {
+      width: 100%;
+
+      &_box {
+        padding: 40px 7% 40px;
+
+        &_text {
+          background-color: rgba($color: $vert, $alpha: 0.75);
+          text-align: center;
+          padding: 15px;
+          line-height: 25px;
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+    }
+    &_right {
+      width: 100%;
+      &_logo {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 550px) {
+  .presentation_left_box_text {
+    font-size: 15px;
+  }
+}
+
 // --------- Étapes ---------
 
 .etapes {
@@ -168,6 +217,54 @@
     }
     &_text {
       text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 950px) {
+  .etapes {
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    &_card1 {
+      transform: translateY(0);
+      font-size: 22px;
+      height: 220px;
+    }
+    &_card2 {
+      transform: translateY(0);
+      font-size: 15px;
+      height: 220px;
+      &_img {
+        width: 120px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 650px) {
+  .etapes {
+    flex-direction: column;
+    margin: 0;
+    padding-left: 0;
+    align-items: center;
+    &_card1 {
+      width: 50%;
+      transform: translateY(0);
+      font-size: 22px;
+      height: 5%;
+    }
+    &_card2 {
+      margin: 0;
+      margin-top: 15px;
+      padding: 5px;
+      width: 50%;
+      transform: translateY(0);
+      font-size: 15px;
+      height: 5%;
+      &_img {
+        width: 120px;
+      }
     }
   }
 }
@@ -236,9 +333,9 @@
 }
 
 .cardmaprime {
-  background: url("../../images/Ma\ prime\ renov.png"), white;
+  background: url("../../images/maprime.png"), white;
   background-position: 54% center;
-  background-size: 170%;
+  background-size: cover;
 
   transition: all 0.4s ease-in-out;
 }
@@ -248,6 +345,91 @@
   background: url("../../images/CEE.png"), $gris;
   background-position: center;
   background-size: 130%;
+}
+
+@media all and (max-width: 1150px) {
+  .aides {
+    &_container {
+      background-color: $gris;
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &_card {
+      position: relative;
+      margin-left: 0;
+      padding: 30px;
+
+      width: 550px;
+      height: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 25px;
+      z-index: 30;
+      &_text {
+        background-color: rgba($color: $vert, $alpha: 0.75);
+        font-size: 25px;
+        line-height: 60px;
+        font-weight: 400;
+        margin: 4px;
+        border-radius: 15px;
+        opacity: 0;
+        transform: translateY(-100px);
+
+        transition: all 0.4s ease-in-out;
+      }
+    }
+
+    &_pac {
+      display: none;
+    }
+    &_title {
+      display: none;
+    }
+  }
+
+  .cardcee {
+    margin: 40px auto 0;
+  }
+}
+@media all and (max-width: 950px) {
+  .aides_card {
+    width: 350px;
+    height: 350px;
+    &_text {
+      background-color: rgba($color: $vert, $alpha: 0.75);
+      font-size: 15px;
+      line-height: 40px;
+      font-weight: 400;
+      margin: 4px;
+      border-radius: 15px;
+      opacity: 0;
+      transform: translateY(-100px);
+
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
+@media all and (max-width: 550px) {
+  .aides_card {
+    width: 250px;
+    height: 250px;
+    &_text {
+      background-color: rgba($color: $vert, $alpha: 0.75);
+      font-size: 10px;
+      line-height: 30px;
+      font-weight: 400;
+      margin: 4px;
+      border-radius: 15px;
+      opacity: 0;
+      transform: translateY(-100px);
+
+      transition: all 0.4s ease-in-out;
+    }
+  }
 }
 
 // ----------- Certification --------
@@ -308,6 +490,26 @@
   }
 }
 
+@media all and (max-width: 950px) {
+  .fonctionnement {
+    &_text {
+      font-size: 22px;
+    }
+  }
+}
+@media all and (max-width: 750px) {
+  .fonctionnement {
+    &_text {
+      font-size: 18px;
+    }
+  }
+}
+@media all and (max-width: 550px) {
+  .fonctionnement {
+    display: none;
+  }
+}
+
 // --------- Detail -----------
 
 .detail {
@@ -325,6 +527,25 @@
     line-height: 35px;
     padding: 1%;
     transform: translateY(25%);
+  }
+}
+
+@media all and (max-width: 950px) {
+  .detail_box {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media all and (max-width: 750px) {
+  .detail_box {
+    font-size: 14px;
+    line-height: 22px;
+    width: 450px;
+  }
+}
+@media all and (max-width: 550px) {
+  .detail_box {
+    display: none;
   }
 }
 
@@ -369,6 +590,137 @@
     align-items: center;
     font-size: 28px;
     line-height: 45px;
+  }
+}
+@media all and (max-width: 1050px) {
+  .avantages {
+    &_container {
+      margin: 0 3%;
+      display: flex;
+      justify-content: space-around;
+      font-family: "Montserrat", sans-serif;
+    }
+    &_card1 {
+      width: 23%;
+      text-align: center;
+      padding: 20px;
+      &_title {
+        color: $vert;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      &_fact {
+        color: $vert;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 15px 0;
+      }
+      &_text {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+
+    &_card2 {
+      width: 23%;
+      background-color: $vert;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      line-height: 45px;
+    }
+  }
+}
+@media all and (max-width: 850px) {
+  .avantages {
+    &_container {
+      margin: 0 3%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Montserrat", sans-serif;
+    }
+    &_card1 {
+      width: 45%;
+      text-align: center;
+      padding: 20px;
+      &_title {
+        color: $vert;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      &_fact {
+        color: $vert;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 15px 0;
+      }
+      &_text {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+
+    &_card2 {
+      width: 45%;
+      background-color: $vert;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      line-height: 45px;
+    }
+  }
+}
+@media all and (max-width: 550px) {
+  .avantages {
+    &_container {
+      margin: 0 3%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Montserrat", sans-serif;
+    }
+    &_card1 {
+      width: 70%;
+      text-align: center;
+      padding: 20px;
+      &_title {
+        color: $vert;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      &_fact {
+        color: $vert;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 15px 0;
+      }
+      &_text {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+
+    &_card2 {
+      width: 70%;
+      background-color: $vert;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      line-height: 45px;
+    }
   }
 }
 
@@ -472,7 +824,8 @@ footer {
 .swiper-slide img {
   display: block;
   height: 10rem;
-  object-fit: cover;
+  object-fit: contain;
+  width: 16rem;
 }
 .swiper-button-prev,
 .swiper-rtl,
